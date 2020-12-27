@@ -1,0 +1,135 @@
+@import "fonts_and_colors.css";
+@import (reference) "fonts_and_colors";
+
+// Add new
+.add-new {
+    width: 40%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.add-new-back-icon {
+    padding-right: 20px;
+    font-size: 19px;
+}
+
+.add-new-back {
+
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+        text-decoration: underline;
+        color: @blue;
+    }
+}
+
+.add-new-title-box {
+    margin-top: 40px;
+}
+
+.add-new-title-box {
+    text-align: center;
+}
+
+.add-new-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-new-area-label {
+    font-weight: bold;
+    font-size: 17px;
+    align-self: center;
+}
+
+.add-new-form-title-area {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-new-form-title {
+    background-color: inherit;
+    box-shadow: inherit;
+    border-radius: 0;
+    border: none;
+    width: 60%;
+    margin-left: 20px;
+    border: 2px solid @grey;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 40px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 2px solid @blue;
+    }
+}
+
+.add-new-form-body-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-new-form-body {
+    background-color: inherit;
+    box-shadow: inherit;
+    border-radius: 0;
+    border: none;
+    width: 60%;
+    margin-left: 20px;
+    border: 2px solid @grey;
+    border-radius: 5px;
+    padding: 5px;
+    height: 240px;
+    resize: inherit;
+    overflow-y: auto;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 2px solid @blue;
+    }
+}
+
+.add-new-form-send {
+    background-color: inherit;
+    box-shadow: inherit;
+    border-radius: 0;
+    border: none;
+    width: 20%;
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: @blue;
+    color: @white;
+
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+        background-color: @blue_darker;
+    }
+    &:disabled{
+        background-color: @blue_darker;
+    }
+}
+
+
+// Success message
+.add-new-success-box{
+    margin-top: 40px;
+    text-align: center;
+}
+.add-new-success{
+    color: @white;
+    background-color: @lime;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+}

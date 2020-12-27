@@ -1,0 +1,52 @@
+@import "fonts_and_colors.css";
+@import (reference) "fonts_and_colors";
+
+// Posts
+.posts {
+    margin-top: 200px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.posts-add-new-box {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.posts-add-new {
+    font-weight: bold;
+    font-size: 17px;
+    color: @white;
+    background-color: @lime;
+    padding: 16px 14px;
+    border-radius: 5px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        cursor: pointer;
+        background-color: @lime_green;
+    }
+}
+
+.posts-add-new-icon {
+    margin-left: 7.5px;
+}
+
+// Posts content
+.posts-content{
+    margin-top: 80px;
+}
+
+// Post
+.post {
+    padding: 24px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        cursor: pointer;
+        background-color: @grey_lighter;
+    }
+
+}
