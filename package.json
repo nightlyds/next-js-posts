@@ -13,8 +13,15 @@
     "tsc": "tsc",
     "lint": "eslint './{src,pages,server}/**/*' --ext .tsx,.ts",
     "pretty": "prettier --write --config .prettierrc.json {src,pages,server}/**/*.{ts,tsx}",
-    "format": "yarn lint --fix"
+    "format": "yarn lint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
+  "keywords": [
+    "posts",
+    "add post"
+  ],
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
