@@ -25,10 +25,10 @@ type PostTypes = {
 };
 
 const Post = ({ postData, loading, error, loadPostData }: PostTypes) => {
-    const { query } = useRouter()
+    const { query } = useRouter();
     useEffect(() => {
         loadPostData(query.post);
-    }, [])
+    }, []);
     const requestedData = postData ? postData.data : { title: "", body: "" };
     return (
         <Layout>

@@ -18,7 +18,7 @@ const AddNew = ({ addNew, loading, error }: AddNewTypes) => {
     const [title, setTitle] = useState<string>("");
     const [bodyText, setBodyText] = useState<string>("");
     const [successMessage, setSuccessMessage] = useState<boolean>(false);
-    const isInvalid: boolean = title === "" || bodyText === "" ? true : false;
+    const isInvalid: boolean = !!(title === "" || bodyText === "");
 
     const activeSuccessMessage = (): void => {
         setSuccessMessage(true);
@@ -29,7 +29,7 @@ const AddNew = ({ addNew, loading, error }: AddNewTypes) => {
 
     const sendForm = (event: React.FormEvent<HTMLFormElement>) => {
         addNew({
-            title: title,
+            title,
             body: bodyText,
         });
 
